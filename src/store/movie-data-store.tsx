@@ -24,7 +24,7 @@ const useMovieStore = create<IUseMovieStore>((set) => ({
     movieData: undefined,
 
     fetchMovies: async (title) => {
-        const response = await fetch(`http://www.omdbapi.com/?t=${title}&apikey=${API_KEY}`);
+        const response = await fetch(`https://www.omdbapi.com/?t=${title}&apikey=${API_KEY}`);
         const json = await response.json();
         console.log(json);
 
