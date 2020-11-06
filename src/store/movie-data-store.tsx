@@ -13,15 +13,18 @@ type IMovieResponse = {
     Released: String;
     Writer: String;
     Error: String;
+    Year: String;
 }
 
 type IUseMovieStore = {
     movieData: IMovieResponse | undefined,
+    watchlist: IMovieResponse[],
     fetchMovies: (title: String) => Promise<void>;
 }
 
 const useMovieStore = create<IUseMovieStore>((set) => ({
     movieData: undefined,
+    watchlist: [],
 
     fetchMovies: async (title) => {
         const response = await fetch(`https://www.omdbapi.com/?t=${title}&apikey=${API_KEY}`);
