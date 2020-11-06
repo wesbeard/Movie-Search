@@ -5,6 +5,11 @@
 
 ---------------------------------------------------------------------------------
 
+- !Update! : Added a new features which combines some of the topics from project 1
+    by including watchlist functionality which allows the user to add a movie they
+    searched to their watchlist which they can remove at any time. It is also being
+    hosted on Netlify [here](https://dazzling-shaw-5e818d.netlify.app/).
+
 - This app is a movie search engine which utilizes the Open Movie Database (OMBd)
     to fetch information on a searched title and display it's basic information
     as well as a link to it's IMDb page.
